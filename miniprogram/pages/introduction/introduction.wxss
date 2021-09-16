@@ -1,0 +1,68 @@
+/* pages/introduction/introduction.wxss */
+
+.head-text{
+  padding-top: 80rpx;
+  font-size:100rpx;
+  font-family:"宋体";
+  color:#2F4F4F;
+  text-align: center;
+}
+
+.bgimg{
+  position:fixed;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-repeat: repeat;
+  background-size: auto;
+}
+
+.avatar{
+  margin-left: 10%;
+  height:160rpx;
+  width:160rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.name{
+  font-size:60rpx;
+  font-family:"宋体";
+  color:#5d6c7a;
+  vertical-align: middle;
+}
+
+.block{
+  display: flex;
+  height: 50%;
+  width: 80%;
+  margin: 10%;
+  border: 3rpx solid rgb(197, 207, 207);
+  border-radius: 3%;
+  background-color: #F0F8FF;
+}
+
+#block3{
+  margin-bottom: 10%;
+}
+
+.introduction-text{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  position: relative;
+  text-align: left;
+  color: rgb(27, 31, 28);
+  font-family:"宋体";
+  text-indent:2em;   
+  line-height:1.5em;   
+}
+
+.last{
+  text-align: right;
+  float: right;
+}
+
+.del_line{
+  text-decoration:line-through;
+}

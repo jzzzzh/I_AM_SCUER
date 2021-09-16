@@ -1,0 +1,80 @@
+<!--pages/index/index.wxml-->
+<!-- <view><block wx:if="{{hasUserInfo === true}}">
+		<image src="{{userInfo.avatarUrl}}"></image>
+		<text>{{userInfo.nickName}}</text>
+	</block>
+	<button 
+		open-type="getUserInfo" 
+		bindgetuserinfo="getUserInfo"
+	>
+		授权登录
+	</button></view> -->
+  <!-- <open-data type="userAvatarUrl"></open-data>  -->
+<view class="flex padding justify-center">
+  <view class="solids" wx:if="{{bgPic}}" id="container" bind:touchstart="touchStart" bind:touchend="touchEnd" bind:touchmove="touchMove">
+    <image class="bgPic " src="{{bgPic}}"></image>
+    <image class="hat1" id='hat1' src="../../image/{{currentHatId1}}.png" style="top:{{hatCenterY1-hatSize1/2-2+'px'}};left:{{hatCenterX1-hatSize1/2-2+'px'}}"></image>
+    <!-- <view class="handle" id="handle" style="top:{{handleCenterY-10+'px'}};left:{{handleCenterX-10+'px'}}"></view> -->
+    <view wx:if="{{currentHatId2 == null}}">
+    <image class="hat2" id='hat2' src="../../image/{{currentHatId2}}.png" style="top:{{hatCenterY-hatSize/2-2+'px'}};left:{{hatCenterX-hatSize/2-2+'px'}};transform:rotate({{rotate+'deg'}}) scale({{scale}})"></image>
+    </view>
+    <view wx:else>    
+    <image class="hat" id='hat' src="../../image/{{currentHatId2}}.png" style="top:{{hatCenterY-hatSize/2-2+'px'}};left:{{hatCenterX-hatSize/2-2+'px'}};transform:rotate({{rotate+'deg'}}) scale({{scale}})"></image>
+    <view class="handle" id="handle" style="top:{{handleCenterY-10+'px'}};left:{{handleCenterX-10+'px'}}"></view>
+    </view>
+
+  </view>
+</view>
+<view class="flex">
+      <!-- <button class="flex-sub padding-lr-sm margin-xs radius cu-btn bg-grey margin-tb-sm lg" data-way="avatar" bind:tap="getAvatar"  open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">点击授权登录加载您的头像</button> -->
+      <view class="container">
+  <view class="userinfo">
+    <block wx:if="{{!hasUserInfo}}">
+      <button class="flex-sub padding-lr-sm margin-xs radius cu-btn bg-grey margin-tb-sm lg" id="but" wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 点击授权登录加载您的头像 </button>
+      <button class="flex-sub padding-lr-sm margin-xs radius cu-btn bg-grey margin-tb-sm lg" id="but" wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击授权登录加载您的头像 </button>
+    </block>
+    <block wx:else>
+    </block>
+  </view>
+</view>
+ </view>
+ <!-- <view class="flex">
+      <button class="flex-sub padding-lr-sm margin-xs radius cu-btn bg-grey margin-tb-sm lg" data-way="avatar" bind:tap="clearanything">清空头像</button>
+ </view> -->
+ <view class="flex">
+  <button class="flex-sub padding-lr-sm margin-xs radius cu-btn line-grey text-grey margin-tb-sm lg" bind:tap="clearanything2">清空头像框</button>
+  <button class="flex-sub padding-lr-sm margin-xs radius cu-btn bg-grey margin-tb-sm lg" bind:tap="clearanything1">清空贴图</button>
+</view>
+ <!-- <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+<view wx:else>请升级微信版本</view> -->
+<!-- 头像框 -->
+<scroll-view class="scrollView" scroll-x="true">
+  <image class="imgList" wx:for="{{imgList2}}" wx:key="index" src="../../image/{{index+6}}.png" data-hat-id="{{index+6}}" bind:tap="chooseImg1"></image>
+</scroll-view>
+<!-- 头像挂件 -->
+<scroll-view class="scrollView" scroll-x="true">
+  <image class="imgList" wx:for="{{imgList1}}" wx:key="index" src="../../image/{{index+1}}.png" data-hat-id="{{index+1}}" bind:tap="chooseImg2"></image>
+</scroll-view>
+<view class="flex">
+  <button class="flex-sub padding-lr-sm margin-xs radius cu-btn line-grey text-grey margin-tb-sm lg" bind:tap="chooseImage">选择图片</button>
+  <button class="flex-sub padding-lr-sm margin-xs radius cu-btn bg-grey margin-tb-sm lg" bind:tap="combinePic" disabled="{{!picChoosed}}">生成头像</button>
+</view>
+<view class="flex footer justify-center align-center">
+  <!-- <navigator target="miniProgram" open-type='navigate' app-id='wx2d97a7e54e6094eb' path='pages/index/index'>
+    <view class="footer-item text-blue padding-lr-sm">
+      <view class="cuIcon-creative">作者博客<text decode="{{true}}">&emsp;&emsp;</text></view>
+    </view>
+  </navigator>
+  <view class="footer-item padding-lr-sm"> | </view> -->
+  <button class="cu-btn footer-item text-blue" open-type="share">
+      <view class="cuIcon-forward">分享给朋友</view>
+  </button>
+  <button class="cu-btn footer-item text-blue" bind:tap="introduction">
+      <view>简介</view>
+  </button>
+</view>
+<view class="flex justify-center align-center">
+  <view>
+    Copyright © 2021-2021<text decode="{{true}}">&ensp;</text>
+  </view>
+</view>

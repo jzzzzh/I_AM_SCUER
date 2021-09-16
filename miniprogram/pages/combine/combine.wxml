@@ -1,0 +1,28 @@
+<view>
+  <view class="flex padding justify-center">
+    <canvas class="myCanvas" canvas-id="myCanvas" style="height:300px;width:300;" />
+  </view>
+  <view class="flex">
+    <button class="flex-sub padding-sm margin-xs radius cu-btn bg-grey margin-tb-sm lg" bind:tap="savePic">保存至相册</button>
+  </view>
+</view>
+<!-- <ad unit-id="adunit-854715c8d93ec0e2"></ad> -->
+<view class="flex footer justify-center align-center">
+  <!-- <navigator target="miniProgram" open-type='navigate' app-id='wx2d97a7e54e6094eb' path='pages/index/index'>
+    <view class="footer-item text-blue padding-lr-sm">
+      <view class="cuIcon-creative">作者博客<text decode="{{true}}">&emsp;&emsp;</text></view>
+    </view>
+  </navigator>
+  <view class="footer-item padding-lr-sm"> | </view> -->
+  <button class="cu-btn footer-item text-blue" open-type="share">
+      <view class="cuIcon-forward">分享给朋友</view>
+  </button>
+  <button class="cu-btn footer-item text-blue" bind:tap="introduction">
+      <view>简介</view>
+  </button>
+</view>
+<view class="flex justify-center align-center">
+  <view>
+    Copyright © 2021-2021<text decode="{{true}}">&ensp;</text>
+  </view>
+</view>

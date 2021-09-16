@@ -1,0 +1,60 @@
+<!--pages/introduction/introduction.wxml-->
+<image src="../../image/15.png"  class="bgimg"> </image>
+<head>
+  <view class="head-text">
+    项目简介
+  </view>
+</head>
+<body>
+  <view class="block">
+    <text class="introduction-text" decode="{{true}}" space="{{true}}">
+    &nbsp;&nbsp;这个项目是一时兴起想到的，也算是完成了本人的一个夙愿吧。
+    &nbsp;&nbsp;首先恭喜我川125周年了！！撒花，打call
+    &nbsp;&nbsp;这个项目源于一次闲聊，看到隔壁电科老家浙大都搞了校庆换头像，所以就萌生了做这个大川换头像迎接校庆的想法。
+    &nbsp;&nbsp;然后独木不成林，凭一个人的力量根本搞不定（其实肝一点可能是可以的），所以中途也想骗很多人来一起做这个项目，但因为种种原因也就没有做成，所以也就咕到了现在，和一个好友一谈这个项目，一拍即合就有了着手做这个项目的动力。
+    &nbsp;&nbsp;如果有人告诉过去的我，一个星期后你会完成一个微信小程序，其实我是不相信的，但真的完成的，根本不敢想象。
+    &nbsp;&nbsp;要感谢川大，感谢司司，感谢美工，感谢写我要带口罩的idealclover（他的博客超好的，吹爆），感谢圣诞帽（我要戴口罩魔改圣诞帽，我们魔改我要戴口罩套娃），最后感谢那些一路上支持我的人以及我所爱的人。
+    <text class="last">
+    jzh
+    写于2021年5月16日
+    于明远湖畔
+    </text>
+    </text>
+  </view>
+  <view>
+    <image src="../../image/13.png" class="avatar" > </image>
+    <text class="name"> JZH</text>
+  </view>
+  <view class="block">
+      <text class="introduction-text" decode="{{true}}" space="{{true}}">
+        &nbsp;&nbsp;啊咧，被发现了。我是jzh，你可以叫我卓导或者卓宝，一只20级计院小菜鸡，现在成都川大就读。
+        &nbsp;&nbsp;一只可爱的男孩纸，什么都会一点（我会系，系屁屁，一丢丢爪哇四库啊呸，派森，其他甚至不足挂齿），但不是很精通。
+        &nbsp;&nbsp;你可以和我聊一些技术细节和一些文学哲学问题诶，当然也欢迎技术大神带带我orz，哲学or文学or社科or摄影大神都可以加我好友呢。
+        &nbsp;&nbsp;科技迷，电影迷，偶尔也追追番，看看书，折腾过个人博客，但太废了就不发出来了。
+        &nbsp;&nbsp;小半个肥宅（划掉），你们可以约我出去逛逛玩诶。就这样吧，联系我的话，扣扣3366988026
+    </text>
+  </view>
+  <view>
+    <image src="../../image/14.gif" class="avatar" > </image>
+    <text class="name"> 司司</text>
+  </view>
+  <view class="block">
+      <text class="introduction-text" decode="{{true}}" space="{{true}}">
+        &nbsp;&nbsp;这里是司司,同样是带川的20级学生.
+        &nbsp;&nbsp;大概是一个杂学家(<text class="del_line">database</text>),什么都会去看点.了解的领域包括但不限于番剧(从小学就是阿宅了前前后后也看了几百部番了吧, 顺便安利下刚刚看完的SSSS电光机王,给我看出糖尿病来了)、文学相关(主要是日本文学,夏目漱石和泉镜花看得多一点)、日语(来个大哥带着我学下日语吧,自学属实痛苦)、摄影(才入胶片坑没多久)、游戏(明日方舟, lol,apex,然后单机玩得不多只有一点休闲小游戏)、音乐(古典,日摇,华语都有听,最喜欢的分别是肖邦,ヨルシカ,Eason)
+        &nbsp;&nbsp;欢迎大家来交流学习~留个联系方式吧qq:1799698593,请记得备注哦~
+    </text>
+  </view>
+  <view>
+    <image src="../../image/12.png" class="avatar" > </image>
+    <text class="name"> 司秋</text>
+  </view>
+
+  <view class="block" id="block3">
+      <text class="introduction-text" decode="{{true}}" space="{{true}}">
+        &nbsp;&nbsp;是一个正在尝试更多更厉害更好看的东西的美工desu
+        &nbsp;&nbsp;非常感谢程序的大力支持，以及容忍我完全忘记了到暑假才做完这回事
+        &nbsp;&nbsp;以后还请多多指教
+    </text>
+  </view>
+</body>

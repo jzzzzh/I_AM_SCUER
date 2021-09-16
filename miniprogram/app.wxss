@@ -1,0 +1,14 @@
+/**app.wxss**/
+
+/* @import './libs/weui-miniprogram/weui-wxss/dist/style/weui.wxss'; */
+@import "./libs/colorui/main.wxss";
+@import "./libs/colorui/icon.wxss";
+
+.footer {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.footer-item {
+  height: 38rpx;
+}
